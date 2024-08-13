@@ -53,7 +53,3 @@ Input the following details in the sidebar to configure the translator:
 ## 🌟 Developer
 
 This application was developed by Shreif Shouman.
-
-## ℹ️ About This App
-
-This Text Translator app simplifies the process of translating text between English and Arabic. Just enter your Microsoft Translator credentials, select the languages, and get your translations instantly.
