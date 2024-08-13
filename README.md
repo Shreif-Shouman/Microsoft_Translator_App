@@ -1,74 +1,59 @@
-# 🌐 Microsoft Translator App
+# 🌐 Azure AI Translator for Arabic
 
-## Overview
+Welcome to the **Azure AI Translator for Arabic** app! This Streamlit application allows you to translate text between English and Arabic using the Microsoft Translator service. It's designed for seamless integration and ease of use, perfect for users needing efficient language translation.
 
-This Streamlit app allows users to translate text between English and Arabic using the Microsoft Translator service. The app provides a simple interface for inputting text, selecting source and target languages, and displaying the translated text.
+## 🛠 Features
 
-## ✨ Features
+- **Credential Configuration**: Input your Microsoft Translator API credentials through an intuitive sidebar.
+- **Language Selection**: Toggle between English and Arabic for both source and target languages.
+- **Instant Translation**: Submit your text and receive translations in real-time.
 
-- **📝 Text Translation:** Translate text between English and Arabic.
-- **💻 User-Friendly Interface:** Input your Microsoft Translator credentials via the sidebar for easy configuration.
-- **⚡ Real-time Translation:** Get instant translations as you input text.
+## 🚀 Getting Started
 
-## 📋 Prerequisites
+Follow these instructions to get a copy of the project up and running on your local machine.
 
-Before running this app, ensure you have the following:
+### Prerequisites
 
-- **🐍 Python 3.x:** Make sure Python is installed on your system.
-- **🔑 Microsoft Translator API Key:** Obtain a subscription key from the Azure portal.
-- **📦 Streamlit Library:** Install Streamlit using pip.
+- Python 3.6+
+- `pip` (Python package installer)
 
-## 🚀 Installation
+### Installation
 
-1. **Clone the Repository:**
-   ```bash
-   git clone https://github.com/your-repository/translator-app.git
-   cd translator-app
-   ```
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/azure-ai-translator-arabic.git
+    cd azure-ai-translator-arabic
+    ```
 
-2. Install the Required Libraries:
-Install the necessary Python packages by running:
-bash
-Copy code
-pip install -r requirements.txt
-Ensure the requirements.txt file includes:
+2. **Install Dependencies**:
+    ```bash
+    pip install streamlit requests uuid
+    ```
 
-text
-Copy code
-streamlit
-requests
-🔧 Configuration
+3. **Run the Application**:
+    ```bash
+    streamlit run app.py
+    ```
 
-Microsoft Translator Credentials:
-🔑 Translator Key: Your Microsoft Translator API key.
-🌐 Endpoint: Your Azure Translator service endpoint.
-📍 Location (Region): The region where your Azure service is hosted.
-Input Credentials:
-Run the app (streamlit run app.py), and enter your Translator Key, Endpoint, and Location in the sidebar.
-🏃‍♂️ Running the App
+## ⚙️ Configuration
 
-To start the app, navigate to the project directory and run:
+Input the following details in the sidebar to configure the translator:
 
-bash
-Copy code
-streamlit run app.py
-The app will open in your web browser. Follow the on-screen instructions to enter your credentials and translate text.
+- **Translator Key**: Your unique Microsoft Translator API key.
+- **Endpoint**: The API endpoint URL.
+- **Location (Region)**: The specific region your API service is located in.
 
-💡 Usage
+## 📝 Usage
 
-Enter Microsoft Translator Credentials: Input your Translator Key, Endpoint, and Location in the sidebar.
-Text Input: Enter the text you want to translate.
-Select Languages: Choose the source and target languages.
-Get Translation: The translated text will be displayed on the main page.
-👨‍💻 Developer
+1. **Configure Your API Credentials**: Enter your credentials in the sidebar and press "Process Credentials".
+2. **Enter Text**: Input the text you wish to translate in the provided text area.
+3. **Select Languages**: Choose the appropriate source and target languages from the dropdown menus.
+4. **Translate**: Click on the "Translate" button to view your translated text.
+
+## 🌟 Developer
 
 This application was developed by Shreif Shouman.
 
-📄 License
+## ℹ️ About This App
 
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-🙏 Acknowledgements
-
-Streamlit
-Microsoft Translator
+This Text Translator app simplifies the process of translating text between English and Arabic. Just enter your Microsoft Translator credentials, select the languages, and get your translations instantly.
