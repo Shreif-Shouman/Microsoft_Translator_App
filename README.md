@@ -1,6 +1,6 @@
-# 🌐 Azure AI Translator for Arabic
+# 🌐 Azure AI Arabic Translator
 
-Welcome to the **Azure AI Translator for Arabic** app! This Streamlit application allows you to translate text between English and Arabic using the Microsoft Translator service. It's designed for seamless integration and ease of use, perfect for users needing efficient language translation.
+Welcome to the **Azure AI Arabic Translator** app! This Streamlit application allows you to translate text between English and Arabic using the Microsoft Translator service. It's designed for seamless integration and ease of use, perfect for users needing efficient language translation.
 
 ## 🛠 Features
 
