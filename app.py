@@ -18,7 +18,7 @@ if st.sidebar.button("Process Credentials"):
 st.sidebar.markdown("""
 ## About This App
 
-Welcome to the Text Translator app!\nThis tool leverages the power of **Azure AI Translation Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
+Welcome to the Text Translator app!.\nThis tool leverages the power of **Azure AI Translation Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
 """)
 
 st.image(banner_image_url, use_column_width=True) 
