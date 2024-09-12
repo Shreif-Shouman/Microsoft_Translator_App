@@ -30,8 +30,8 @@ st.sidebar.markdown("""
 Welcome to the Text Translator app!\n\nThis tool leverages the power of **Azure AI Translation Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
 """)
 
-st.image(banner_image_url, use_column_width=True) 
-st.title("Azure AI Translator for Arabic")
+#st.image(banner_image_url, use_column_width=True) 
+#st.title("Azure AI Translator for Arabic")
 
 if translator_key and endpoint and location:
     text_to_translate = st.text_area("Enter text to translate:")
