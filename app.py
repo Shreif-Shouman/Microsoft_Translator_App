@@ -2,7 +2,15 @@ import streamlit as st
 import requests, uuid
 
 
-banner_image_url = "https://ehlion.com/wp-content/uploads/2021/10/microsoft-translator-review-by-ehlion.jpg"  # Replace with your banner image URL
+custom_html = """
+            <div style="text-align: center;">
+                <div style="display: inline-block; overflow: hidden; height: auto; width: 50%; max-width: 300px; background-color: #f0f0f0; border-radius: 20px; border: 1px solid gray; margin-bottom: 20px;">
+                    <img src="https://www.iaea.org/sites/default/files/styles/original_image_size/public/iaea-eu-20150210.jpg?itok=9M9TQK7q" style="width: 100%; height: auto; object-fit: contain; border-radius: 20px;">
+                </div>
+                <h1 style="text-align: center; font-size: 28px; font-weight: bold; color: #333;">Azure OpenAI Chat Application</h1>
+                <p style='text-align: center; font-size: small; color: gray;'>Powered by © Microsoft Azure OpenAI. This app can make mistakes.</p>
+            </div>
+            """
 
 
 st.sidebar.title("Microsoft Translator")
