@@ -5,7 +5,7 @@ import requests, uuid
 custom_html = """
             <div style="text-align: center;">
                 <div style="display: inline-block; overflow: hidden; height: auto; width: 50%; max-width: 300px; background-color: #f0f0f0; border-radius: 20px; border: 1px solid gray; margin-bottom: 20px;">
-                    <img src="https://iaeabss.visualstudio.com/1a67d2d0-772d-4bb6-a7e0-fb6e9cd824b7/_apis/git/repositories/03c40922-539c-4c7d-8e2a-5a87751fcde8/items?path=/banner.jpg&versionDescriptor%5BversionOptions%5D=0&versionDescriptor%5BversionType%5D=0&versionDescriptor%5Bversion%5D=main&resolveLfs=true&%24format=octetStream&api-version=5.0" style="width: 100%; height: auto; object-fit: contain; border-radius: 20px;">
+                    <img src="https://raw.githubusercontent.com/Shreif-Shouman/Mistral-VDB-Chat/main/banner.jpg" style="width: 100%; height: auto; object-fit: contain; border-radius: 20px;">
                 </div>
                 <h1 style="text-align: center; font-size: 28px; font-weight: bold; color: #333;">Azure AI Arabic Translator</h1>
                 <p style='text-align: center; font-size: small; color: gray;'>Powered by © Microsoft Translator Service.</p>
