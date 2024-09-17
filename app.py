@@ -8,7 +8,7 @@ custom_html = """
                     <img src="https://raw.githubusercontent.com/Shreif-Shouman/Mistral-VDB-Chat/main/banner.jpg" style="width: 100%; height: auto; object-fit: contain; border-radius: 20px;">
                 </div>
                 <h1 style="text-align: center; font-size: 28px; font-weight: bold; color: #333;">Azure AI Arabic Translator</h1>
-                <p style='text-align: center; font-size: small; color: gray;'>Powered by © Microsoft Translator Service.</p>
+                <p style='text-align: center; font-size: small; color: gray;'>Powered by © Microsoft Translation Services.</p>
             </div>
             """
 st.markdown(custom_html, unsafe_allow_html=True)
