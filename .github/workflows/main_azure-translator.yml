@@ -1,4 +1,8 @@
-name: Build and deploy Python app to Azure Web App - Azure-translator
+# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
+# More GitHub Actions for Azure: https://github.com/Azure/actions
+# More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
+
+name: Build and deploy Python app to Azure Web App - Azure-Translator
 
 on:
   push:
@@ -11,8 +15,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Set up Python version
         uses: actions/setup-python@v5
@@ -47,7 +50,7 @@ jobs:
       name: 'Production'
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
     permissions:
-      id-token: write # This is required for requesting the JWT token
+      id-token: write #This is required for requesting the JWT
 
     steps:
       - name: Download artifact from build job
@@ -58,20 +61,18 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
+      
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID }}
-          auth-type: oidc  # Using OpenID Connect for secure authentication
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A70EABD5AA9540A0B228101034494D1E }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_868D76EF0A69454082D7E9665AE94D33 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_8A7FC884B4834308867CC64374F51FEC }}
 
-      - name: Deploy to Azure Web App
+      - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v3
         id: deploy-to-webapp
         with:
-          app-name: 'Azure-translator'  # Name of your Azure Web App
+          app-name: 'Azure-Translator'
           slot-name: 'Production'
-
-      - name: Azure App Service URL
-        run: echo "Application deployed to ${{ steps.deploy-to-webapp.outputs.webapp-url }}"
+          
