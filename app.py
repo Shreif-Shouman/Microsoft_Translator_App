@@ -1,7 +1,7 @@
 import streamlit as st
 import requests, uuid
 
-
+# Custom HTML for the header
 custom_html = """
             <div style="text-align: center;">
                 <div style="display: inline-block; overflow: hidden; height: auto; width: 50%; max-width: 300px; background-color: #f0f0f0; border-radius: 20px; border: 1px solid gray; margin-bottom: 20px;">
@@ -13,25 +13,21 @@ custom_html = """
             """
 st.markdown(custom_html, unsafe_allow_html=True)
 
+# Fetch credentials from the secrets.toml file
+translator_key = st.secrets["azure_translator"]["key"]
+endpoint = st.secrets["azure_translator"]["endpoint"]
+location = st.secrets["azure_translator"]["region"]
 
 st.sidebar.title("Microsoft Translator")
-translator_key = st.sidebar.text_input("Translator Key")
-endpoint = st.sidebar.text_input("Endpoint")
-location = st.sidebar.text_input("Location (Region)")
+st.sidebar.success("Credentials loaded from secrets file.")
 
-if st.sidebar.button("Process Credentials"):
-    if translator_key and endpoint and location:
-        st.sidebar.success("Configuration looks good!")
-    else:
-        st.sidebar.warning("Please fill in all configuration fields.")
 st.sidebar.markdown("""
 ## About This App
 
 Welcome to the Text Translator app!\n\nThis tool leverages the power of **Azure AI Translation Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
 """)
 
-
-
+# Check if credentials exist
 if translator_key and endpoint and location:
     text_to_translate = st.text_area("Enter text to translate:")
     
@@ -74,6 +70,5 @@ if translator_key and endpoint and location:
 
         except Exception as e:
             st.error(f"Translation failed: {e}")
-
 else:
-    st.warning("Please configure the translator in the sidebar first.")
+    st.warning("Credentials are missing or not configured properly.")
