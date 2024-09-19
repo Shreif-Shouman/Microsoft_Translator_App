@@ -24,7 +24,7 @@ st.sidebar.success("Credentials loaded from secrets file.")
 st.sidebar.markdown("""
 ## About This App
 
-Welcome to the Text Translator app!\n\nThis tool leverages the power of **Azure AI Translation Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
+Welcome to the Text Translator app!\n\nThis tool leverages the power of **Azure AI Translator Service** to provide instant translations between English and Arabic.\n\nSimply enter your text, select the source and target languages, and get your translation in seconds.\n\n**Developed by the Innovation Team\nDeveloper: Shreif Shouman**
 """)
 
 # Check if credentials exist
